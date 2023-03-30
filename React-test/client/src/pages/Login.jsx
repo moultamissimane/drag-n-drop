@@ -2,25 +2,13 @@ import React from "react";
 import { Form, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import Bus from "../assets/bus.jpg";
+// import Bus from "../assets/bus.jpg";
+import bg from "../assets/bg.png"
 // import Logo from "../assets/Logo.png";
 
 function Login() {
   const navigate = useNavigate();
   const onFinish = async (req, res) => {
-    //   try {
-    //     const response = await axios.post("/api/users/login", values);
-    //     if (response.data.success) {
-    //       message.success(response.data.message);
-    //       localStorage.setItem("token", response.data.data);
-    //       navigate("/home");
-    //     } else {
-    //       message.error(response.data.message);
-    //     }
-    //   } catch (error) {
-    //     message.error(error.message);
-    //   }
-    // };
     try {
       const response = await fetch('http://localhost:5000/api/users/login', {
         method: 'POST',
@@ -42,15 +30,6 @@ function Login() {
           console.log(data);
           navigate('/LandingPage');
         })
-      // const responseData = await response.json();
-
-      // if (responseData.success) {
-      //   message.success(responseData.message);
-      //   localStorage.setItem('token', responseData.data);
-      //   navigate('/LandingPage');
-      // } else {
-      //   message.error(responseData.message);
-      // }
     } catch (error) {
       message.error(error.message);
     }
@@ -59,7 +38,7 @@ function Login() {
     <div
       className="bg-no-repeat bg-cover bg-center relative"
       style={{
-        backgroundImage: `url(${Bus})`,
+        backgroundImage: `url(${bg})`,
         fontFamily: 'quicksand'
       }}
     >

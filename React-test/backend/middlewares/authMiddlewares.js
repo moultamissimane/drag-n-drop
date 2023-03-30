@@ -10,6 +10,8 @@ module.exports = (req, res, next) => {
             });
         }
         const decoded = jwt.verify(token, process.env.jwt_secret);
+        // jwt_secret= imane123
+        // you can use this variable instead
         req.body.userId = decoded.userId;
         next();
     } catch (error) {
