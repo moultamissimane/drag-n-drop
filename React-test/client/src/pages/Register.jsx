@@ -6,8 +6,6 @@ import { useDispatch } from "react-redux";
 import { ShowLoading, HideLoading } from "../redux/alertsSlice";
 import bg from "../assets/bg.png"
 
-
-
 function Register() {
   const navigate = useNavigate();
 
@@ -48,7 +46,7 @@ function Register() {
       <div className="min-h-screen sm:flex sm:flex-row mx-0 justify-center">
         <div className="flex-col flex  self-center p-10 sm:max-w-5xl xl:max-w-4xl  z-10">
           <div className="self-start hidden lg:flex flex-col  text-white">
-           
+
           </div>
         </div>
         <div className="flex justify-center self-center  z-10">

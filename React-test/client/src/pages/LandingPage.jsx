@@ -7,7 +7,7 @@ import "../App.css";
 
 
 const LandingPage = () => {
-  const [images, setImages] = useState([]);
+	const [images, setImages] = useState([]);
 
 	const onDrop = useCallback((acceptedFiles) => {
 		acceptedFiles.map((file, index) => {

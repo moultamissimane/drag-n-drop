@@ -39,7 +39,6 @@ function Login() {
       className="bg-no-repeat bg-cover bg-center relative"
       style={{
         backgroundImage: `url(${bg})`,
-        fontFamily: 'quicksand'
       }}
     >
       <div className="absolute bg-gradient-to-b from-[#064144] to-[#000000] opacity-50 inset-0 z-0" />
